@@ -1,6 +1,6 @@
 # ROADMAP: Airlock
 
-Last updated: 2026-11-19 18:55 UTC
+Last updated: 2026-11-19 19:46 UTC
 
 Roadmap version: 1
 
@@ -43,7 +43,7 @@ The repository is 100% ready when every task in Phases 0 to 8 is done and every 
 | 6 | Stellar detectors | 0 | 5 | 0% |
 | 7 | Hardening and edge cases | 4 | 13 | 31% |
 | 8 | Release v0.2.0 and community | 2 | 6 | 33% |
-| 9 (backlog) | Backlog | 8 | 21 | 38% |
+| 9 (backlog) | Backlog | 12 | 25 | 48% |
 | **Phases 0 to 8** | **Readiness total** | **46** | **95** | **48%** |
 | Gates | G1 to G10 | 0 | 10 | 0% |
 <!-- PROGRESS:END -->
@@ -296,6 +296,10 @@ families.
 - [x] **9.19** Test that `STATE_RULE_IDS` covers every state finding the engine emits, deriving the producers from `collector.py` and `policy.py` with `ast` and resolving module-level id constants, plus a self-test that names a missing id (#50).
 - [x] **9.20** Test that `pr` and `push` never read policy or the Wasm manifest from the working tree, by monkeypatching `_working_text` to raise and driving `full` mode as the control (#48).
 - [x] **9.21** Narrow `cfg-network` so a URL literal fires only as a call argument or as the value of a key naming a URL, endpoint, host or request; a documentation URL in a comment stays quiet (#54).
+- [x] **9.22** Fix `pat-editor-command-path` false positive on terminal preferences (`defaultProfile`, `shellArgs`) in `.vscode/settings.json`, preserving WARN for executable keys (#41).
+- [x] **9.23** Implement `native_binary` detector and `native-binary-artifact` rule (WARN, suppressible) for committed ELF and Mach-O binaries (#43).
+- [x] **9.24** Test that fingerprint occurrence numbering and detector dispatch order are deterministic under all finding permutations (#49).
+- [x] **9.25** Test that every declared non-magic role in rule data is producible from derived glob paths, with a self-test flagging unreachable patterns (#51).
 
 ## 6. Dependency map (critical path)
 

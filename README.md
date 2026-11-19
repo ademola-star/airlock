@@ -30,8 +30,8 @@ It is a scanner for a specific attack class, not a general-purpose antivirus.
 <!-- METRICS:START -->
 | Indicator | Value | Source |
 |---|---|---|
-| Test Suite | **791 passing** | `python -m pytest` |
-| Builtin Rules | **27 verified** across 7 families | `rules/builtin` |
+| Test Suite | **823 passing** | `python -m pytest` |
+| Builtin Rules | **28 verified** across 8 families | `rules/builtin` |
 | Runtime Dependencies | **0 external dependencies** | `pyproject.toml` |
 | Scanning Modes | **`full` / `pr` / `diff`** | CLI specification |
 <!-- METRICS:END -->

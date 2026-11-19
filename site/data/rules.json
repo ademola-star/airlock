@@ -2,9 +2,9 @@
   "source": "rules/builtin",
   "counts": {
     "high": 17,
-    "warn": 10,
+    "warn": 11,
     "info": 0,
-    "total": 27
+    "total": 28
   },
   "rules": [
     {
@@ -264,6 +264,18 @@
       ],
       "suppressible": true,
       "rationale": "A path dependency resolving outside the repository is not covered by the tracked source tree and can vary with the build environment. In-repository path dependencies remain clean."
+    },
+    {
+      "id": "native-binary-artifact",
+      "title": "Tracked executable binary artifact",
+      "severity": "warn",
+      "family": "native_binary",
+      "detector": "builtin:native_binary",
+      "roles": [
+        "native-binary"
+      ],
+      "suppressible": true,
+      "rationale": "Tracked native executable binaries bypass source reviews and can execute arbitrary machine code. Airlock reports them as metadata without inspecting or executing the binary."
     },
     {
       "id": "npm-registry-bypass",

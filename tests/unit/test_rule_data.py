@@ -70,6 +70,7 @@ class TestShippedRuleSet:
             "cargo-git-dependency",
             "cargo-patch-override",
             "cargo-path-escape",
+            "native-binary-artifact",
         }
 
     def test_a_pattern_rule_without_a_detector_carries_a_pattern(self) -> None:

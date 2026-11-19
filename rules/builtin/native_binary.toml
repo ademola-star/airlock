@@ -1,0 +1,11 @@
+# Tracked native executable binaries bypass source reviews and can execute arbitrary machine code.
+
+[[rule]]
+id = "native-binary-artifact"
+title = "Tracked executable binary artifact"
+roles = ["native-binary"]
+detector = "builtin:native_binary"
+severity = "warn"
+suppressible = true
+rationale = "Tracked native executable binaries bypass source reviews and can execute arbitrary machine code. Airlock reports them as metadata without inspecting or executing the binary."
+tests = { positive = "native_binary_artifact", negative = "native_binary_artifact" }

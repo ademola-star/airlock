@@ -371,8 +371,27 @@
     </article>
   </div>
 </section>
+<section class="family" id="family-native_binary" data-family="native_binary">
+  <h3 class="family-head"><span><b>[ 05 ] Native binaries</b> / native_binary</span><span>1 RULES / 1 WARN</span></h3>
+  <div class="rule-list-inner">
+    <article class="rule" id="native-binary-artifact" data-severity="warn"
+      data-family="native_binary">
+      <div class="rule-top">
+        <h3 class="rule-id">native-binary-artifact</h3>
+        <span class="sev sev--warn">WARN</span>
+      </div>
+      <p class="rule-title">Tracked executable binary artifact</p>
+      <p class="rule-why">Tracked native executable binaries bypass source reviews and can execute arbitrary machine code. Airlock reports them as metadata without inspecting or executing the binary.</p>
+      <p class="rule-meta">
+        <span>Detector <b>native_binary (code)</b></span>
+        <span>Roles <b>native-binary</b></span>
+        <span>Suppressible <b>yes</b></span>
+      </p>
+    </article>
+  </div>
+</section>
 <section class="family" id="family-npm_registry" data-family="npm_registry">
-  <h3 class="family-head"><span><b>[ 05 ] npm registry</b> / npm_registry</span><span>1 RULES / 1 HIGH</span></h3>
+  <h3 class="family-head"><span><b>[ 06 ] npm registry</b> / npm_registry</span><span>1 RULES / 1 HIGH</span></h3>
   <div class="rule-list-inner">
     <article class="rule" id="npm-registry-bypass" data-severity="high"
       data-family="npm_registry">
@@ -391,7 +410,7 @@
   </div>
 </section>
 <section class="family" id="family-stellar_seed" data-family="stellar_seed">
-  <h3 class="family-head"><span><b>[ 06 ] Stellar keys</b> / stellar_seed</span><span>1 RULES / 1 HIGH</span></h3>
+  <h3 class="family-head"><span><b>[ 07 ] Stellar keys</b> / stellar_seed</span><span>1 RULES / 1 HIGH</span></h3>
   <div class="rule-list-inner">
     <article class="rule" id="stellar-seed" data-severity="high"
       data-family="stellar_seed">
@@ -410,7 +429,7 @@
   </div>
 </section>
 <section class="family" id="family-wasm_manifest" data-family="wasm_manifest">
-  <h3 class="family-head"><span><b>[ 07 ] Artifact integrity</b> / wasm_manifest</span><span>5 RULES / 2 HIGH / 3 WARN</span></h3>
+  <h3 class="family-head"><span><b>[ 08 ] Artifact integrity</b> / wasm_manifest</span><span>5 RULES / 2 HIGH / 3 WARN</span></h3>
   <div class="rule-list-inner">
     <article class="rule" id="wasm-unlisted" data-severity="high"
       data-family="wasm_manifest">

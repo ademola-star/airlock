@@ -96,5 +96,5 @@ detector = "pattern"
 severity = "warn"
 suppressible = true
 rationale = "`.vscode/settings.json` is the second half of the editor auto-run surface: `tasks.json` says what can run, and these keys say what the editor runs by itself when a folder opens. A path to an interpreter or a compiler directory is loaded by the extension host, so a planted one needs no user action. Preferences with nothing executable behind them are not reported, which is what keeps this a WARN about a handful of key names rather than about the file."
-pattern = { kind = "regex", value = '''"(?:[\w.-]+\.)?(?:defaultInterpreterPath|executablePath|execPath|binPath|interpreterPath|pythonPath|nodeExecutable|alternateTools|defaultProfile|shellArgs|tsdk)"\s*:''' }
+pattern = { kind = "regex", value = '''"(?:[\w.-]+\.)?(?:defaultInterpreterPath|executablePath|execPath|binPath|interpreterPath|pythonPath|nodeExecutable|alternateTools|tsdk)"\s*:''' }
 tests = { positive = "ci_editor_command_path", negative = "ci_editor_command_path" }
